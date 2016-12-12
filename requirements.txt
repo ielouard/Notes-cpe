@@ -27,7 +27,6 @@ gunicorn==19.6.0
 ipython==5.1.0
 ipython-genutils==0.1.0
 ipywidgets==5.2.2
-llvmlite==0.13.0
 locket==0.2.0
 lxml==3.6.4
 MarkupSafe==0.23
