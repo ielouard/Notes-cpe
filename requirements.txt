@@ -34,7 +34,6 @@ matplotlib==1.5.3
 nbconvert==4.2.0
 networkx==1.11
 pathlib2==2.1.0
-pywin32==220
 requests==2.11.1
 requests-oauthlib==0.7.0
 selenium==3.0.2
