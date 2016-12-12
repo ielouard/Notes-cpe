@@ -1,13 +1,7 @@
-from flask import Flask
 from parse import getNotes
 import filecmp
 import time
 import fbchat
-
-app=Flask(__name__)
-
-@app.route('/')
-def index():
 
 	client = fbchat.Client("chatbotcpe@gmail.com", "CPE-Lyon2016") # Identifiant facebook
 	friends = client.getUsers("Ibrahim El Ouard")  # Personnes à qui tu veux envoyer le message
@@ -20,10 +14,6 @@ def index():
 		sent = client.send(friend.uid, "pas encore de nouvelles notes")
 		time.sleep(3600) # Attendre 1h
 		getNotes("parse2.txt")
-		return "boucle while"
 
 	
 	sent = client.send(friend.uid, "des notes sont sorties")
-
-if __name__ == "__main__":
-	app.run()

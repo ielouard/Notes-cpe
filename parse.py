@@ -9,9 +9,9 @@ def getNotes(fichier):
 		user = browser.find_element_by_name("username")
 		password = browser.find_element_by_name("password")
 		user.clear()
-		user.send_keys("ibrahim.elouard@cpe.fr") #adresse mail @cpe.fr
+		user.send_keys("prenom.nom@cpe.fr") #adresse mail @cpe.fr
 		password.clear()
-		password.send_keys("squierj-bass1995") #mot de passe cpe
+		password.send_keys("Ton_Mot_De_Passe") #mot de passe cpe
 		browser.find_element_by_name("submit").click()
 
 
