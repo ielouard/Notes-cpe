@@ -8,6 +8,7 @@ app=Flask(__name__)
 
 @app.route('/')
 def index():
+	print("app running")
 	client = fbchat.Client("chatbotcpe@gmail.com", "CPE-Lyon2016") # Identifiant facebook
 	friends = client.getUsers("Ibrahim El Ouard")  # Personnes à qui tu veux envoyer le message
 	friend = friends[0]
